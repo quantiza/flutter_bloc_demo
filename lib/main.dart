@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'counter.dart';
 import 'package:flutter_bloc_demo/list/infinite_list.dart';
+import 'login/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,6 +36,10 @@ class Home extends StatelessWidget {
       ListTile(
         title: Text(InfiniteList().runtimeType.toString()),
         onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => InfiniteList())),
+      ),
+      ListTile(
+        title: Text(LoginDemo().runtimeType.toString()),
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginDemo())),
       ),
     ];
 
